@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "bike",
+        "image": "https://i.ibb.co/g6zcc25/pexels-nikita-khandelwal-819805-removebg-preview.png"
+    },
+    {
+        "id": 2,
+        "name": "car",
+        "image": "https://i.ibb.co/GcvKbFk/pexels-mike-2365572-removebg-preview.png"
+    },
+    {
+        "id": 3,
+        "name": "bus",
+        "image": "https://i.ibb.co/9vXXzhx/pexels-3847770-removebg-preview.png"
+    },
+    {
+        "id": 4,
+        "name": "train",
+        "image": "https://i.ibb.co/qjgfqWn/pexels-pixabay-221281-removebg-preview.png"
+    }
+]

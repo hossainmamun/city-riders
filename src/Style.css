@@ -1,0 +1,286 @@
+/* --------- header css ------- */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.navigation .navi-link {
+    margin: 10px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+}
+.brand {
+    text-decoration: none;
+    list-style: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.brand:hover {
+    color: #000;
+}
+.navi-link:hover {
+    color: #000;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+.logSign-btn {
+    background: green;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0px 15px;
+    align-items: center;
+}
+.header-logSign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-logSign span {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* -------- loginSignUp -------- */
+.login-signup {
+    background: #fff;
+    padding: 20px 20px 50px 20px;
+    width: 25%;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.from {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.from .input {
+    font-size: 16px;
+    padding: 10px;
+    border: 0;
+    margin: 15px 0;
+    background: transparent;
+    border-bottom: 1px solid gray;
+}
+.from .input:focus {
+    outline: 0;
+}
+.submit {
+    background: green;
+    border: 1px solid green;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.error {
+    color: rgb(190, 29, 29);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.success {
+    color: green;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.from p {
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+}
+.toggle {
+    text-align: center;
+}
+.toggle-btn {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    color: tomato;
+    padding: 0;
+    margin-left: 10px;
+}
+.toggle-btn:hover {
+    border-bottom: 1px solid tomato;
+}
+.toggle span {
+    text-transform: capitalize;
+}
+.google-btn {
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.google-btn:hover {
+    background: #000;
+    color: #fff;
+}
+.react-icon-g {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* --------- home --------- */
+.home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    justify-items: center;
+}
+
+/* ------ vehicle ------- */
+.vehicle {
+    background: #fff;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.vehicle:hover {
+    background: green;
+    color: #fff;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+.vehicle img {
+    width: 100%;
+}
+.vehicle p {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* --------- responsive --------- */
+@media (max-width: 1200px) {
+    .login-signup {
+        width: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .login-signup {
+        width: 50%;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px auto;
+    }
+    .vehicle {
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+    .login-signup {
+        width: 70%;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+    }
+    .vehicle {
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+}
+@media (max-width: 575px) {
+    .login-signup {
+        width: 90%;
+    }
+    .home {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+    }
+    .vehicle {
+        width: 300px;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+    .destination {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (min-width: 1201px) {
+    .login-signup {
+        width: 30%;
+    }
+}
